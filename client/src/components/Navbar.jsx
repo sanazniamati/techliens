@@ -9,8 +9,8 @@ import {
   Icon,
   Text,
   useDisclosure,
-  //   Button,
-  //   Stack,
+  Button,
+  Stack,
   useColorModeValue,
   useColorMode,
   //   useToast,
@@ -47,7 +47,7 @@ function Navbar() {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+    <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} w={"100vw"}>
       <Flex h={16} alignItems="center" justifyContent="space-between">
         <IconButton
           size="md"
@@ -81,8 +81,38 @@ function Navbar() {
               onClick={() => toggleColorMode()}
             />
           </NavLink>
+          <Button as={ReactLink} to="/login" p={2} fontSize="sm" fontWeight={400} variant="link">
+            Sign in
+          </Button>
+          <Button
+            as={ReactLink}
+            to="/registration"
+            m={2}
+            display={{ base: "none", md: "inline-flex" }}
+            fontSize="sm"
+            fontWeight={600}
+            _hover={{ bg: "orange.400" }}
+            bg="orange.500"
+            color="white"
+          >
+            Sign Up
+          </Button>
         </Flex>
       </Flex>
+      {isOpen ? (
+        <Box pb={4} display={{ md: "none" }}>
+          <Stack as="nav" spacing={4}>
+            {links.map((link) => (
+              <NavLink key={link.linkName} path={link.path}>
+                {link.linkName}
+              </NavLink>
+            ))}
+            <NavLink key="sign up" path="/registration">
+              Sign Up
+            </NavLink>
+          </Stack>
+        </Box>
+      ) : null}
     </Box>
   );
 }
