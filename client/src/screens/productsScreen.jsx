@@ -1,3 +1,5 @@
+/** @format */
+
 import {
   Center,
   Wrap,
@@ -9,9 +11,21 @@ import {
   AlertDescription,
   AlertTitle,
 } from "@chakra-ui/react";
+import { products } from "../products";
+import ProductCard from "../components/ProductCard";
 
-function productsScreen(props) {
-  return <Wrap spacing={10} justify={Center} minHeight={"100vh"}></Wrap>;
+function productsScreen() {
+  return (
+    <Wrap spacing={30} justify="center">
+      {products.map((product) => (
+        <WrapItem key={product.id}>
+          <Center w="250px" h="550px">
+            <ProductCard product={product} />
+          </Center>
+        </WrapItem>
+      ))}
+    </Wrap>
+  );
 }
 
 export default productsScreen;

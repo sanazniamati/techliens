@@ -1,6 +1,7 @@
 export const products = [
   {
-    _id: "621235e59540445b3sdfe9s0",
+    id: 0,
+    // id: "621235e59540445b3sdfe9s0",
     name: "Samsung Galaxy Z Flip4 5G",
     image: "/images/flip.jpg",
     description:
@@ -15,7 +16,8 @@ export const products = [
     stock: 7,
   },
   {
-    _id: "636985e59540445b3c45e6af",
+    id: 1,
+    // id: "636985e59540445b3c45e6af",
     name: "iPhone 11 Pro 256GB Memory",
     image: "/images/iphone.jpg",
     description:
@@ -31,7 +33,8 @@ export const products = [
     stock: 5,
   },
   {
-    _id: "6369860d9540445b3c45e6b1",
+    id: 2,
+    // id: "6369860d9540445b3c45e6b1",
     name: "Samsung Galaxy Tab S6",
     image: "/images/tab.jpg",
     description:
@@ -48,7 +51,8 @@ export const products = [
     stock: 0,
   },
   {
-    _id: "6369863c9540445b3c45e6b3",
+    id: 3,
+    // id: "6369863c9540445b3c45e6b3",
     name: "Samsung Galaxy Watch5 Pro",
     image: "/images/s4prowatch.jpg",
     description:
@@ -64,7 +68,8 @@ export const products = [
     stock: 7,
   },
   {
-    _id: "636986579540445b3c45e6b5",
+    id: 4,
+    // id: "636986579540445b3c45e6b5",
     name: "Samsung Galaxy S4 Watch",
     image: "/images/s4watch.jpg",
     description:
@@ -80,7 +85,8 @@ export const products = [
     stock: 1,
   },
   {
-    _id: "636986749540445b3c45e6b7",
+    id: 5,
+    // id: "636986749540445b3c45e6b7",
     name: "Samsung Galaxy S21 128GB",
     image: "/images/s22.jpg",
     description:
@@ -94,7 +100,8 @@ export const products = [
     stock: 0,
   },
   {
-    _id: "63804a5079636c2ced47757d",
+    id: 6,
+    // id: "63804a5079636c2ced47757d",
     name: "Apple Watch SE 40mm",
     image: "/images/apple-watch.jpg",
     brand: "Apples",
@@ -109,7 +116,8 @@ export const products = [
     reviews: [],
   },
   {
-    _id: "6381275e8e8648e00b7c82f7",
+    id: 7,
+    // id: "6381275e8e8648e00b7c82f7",
     name: "Shure MV7",
     image: "/images/shure-mv7.jpg",
     brand: "Shure",
@@ -124,7 +132,8 @@ export const products = [
     reviews: [],
   },
   {
-    _id: "63895d3b2a3e062504353022",
+    id: 8,
+    // id: "63895d3b2a3e062504353022",
     name: "Samsung A73",
     image: "/images/a73.jpg",
     brand: "Samsung",
