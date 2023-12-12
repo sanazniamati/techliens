@@ -4,12 +4,12 @@ import {
   Center,
   Wrap,
   WrapItem,
-  Spinner,
-  Stack,
-  Alert,
-  AlertIcon,
-  AlertDescription,
-  AlertTitle,
+  // Spinner,
+  // Stack,
+  // Alert,
+  // AlertIcon,
+  // AlertDescription,
+  // AlertTitle,
 } from "@chakra-ui/react";
 import { products } from "../products";
 import ProductCard from "../components/ProductCard";
@@ -20,6 +20,7 @@ function productsScreen() {
       {products.map((product) => (
         <WrapItem key={product.id}>
           <Center w="250px" h="550px">
+            {/* {product.name} */}
             <ProductCard product={product} />
           </Center>
         </WrapItem>
